@@ -1,0 +1,52 @@
+.container {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin: 0 auto;
+ max-width: 95%;
+ min-height: 100vh;
+ background-color: deepskyblue;   
+ font-size: 2rem;
+ font-weight: bolder;
+ color: white;
+ font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+ 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+ sans-serif;
+}
+
+
+/****Navigation Bar styles *************/
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    font-size: 1.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    font-weight: bold;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style-type: none;
+}
+nav ul li{
+    margin-left: 2rem;
+}
+nav ul li .first{
+    margin-left: 0;
+}
+nav ul li a{
+    color: black;
+    text-decoration: none;
+}
+nav ul li:before {
+    margin-left: 0;
+}
+
+                                         
