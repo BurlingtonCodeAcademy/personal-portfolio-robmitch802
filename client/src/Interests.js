@@ -1,4 +1,6 @@
 import React from 'react'
+import './style.css'
+import { Link } from 'react-router-dom'
 
 class Hobbies extends React.Component {
     render() {

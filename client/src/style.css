@@ -49,4 +49,15 @@ nav ul li:before {
     margin-left: 0;
 }
 
-                                         
+/***** general list styles ****/
+.listContainer{
+    list-style-type: none;
+}
+.listContainer a{
+    text-decoration: none;
+    color: white;
+}
+
+img {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)
+}
