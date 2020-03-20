@@ -7,17 +7,14 @@ class App extends React.Component {
 render (){
   return (
     <div>
-
     <div className="container">
-      <h1></h1>
-      <img src="" />
+      <h1>Rob Mitchell</h1>
       <div className="listContainer">
       <div> <Link to={'/AboutMe'} ><span>About Me</span></Link></div>
-      <div>Projects</div>
-      <div>Hobbies &amp; Interests</div>
-      <div>Work History</div>
+      <div><Link to={'/Projects'} >Projects</Link></div>
+      <div><Link to={'/Interests'} >Hobbies &amp; Interests</Link></div>
+      <div><Link to={'/Work'} >Work</Link></div>
       <div><Link to={'/Contact'} ><span>Contact Me</span></Link></div>
-      <div>Footer</div>
       </div>
     </div>
     </div>

@@ -8,8 +8,9 @@ class AboutMe extends React.Component {
         return (
             <div className="container">
                 <h1>About Me</h1>
-                <div><img src="./img/rob04.jpg" /></div>
-                <p>I'm a native Vermonter.</p>
+                <div><img src="/rob04.jpg" /></div>
+                <p>I'm a native Vermonter.(That's me on the left)</p>
+                <p></p>
                 <Link to={'/'} ><button>Home</button></Link>
             </div>
         )

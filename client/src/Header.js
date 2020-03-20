@@ -15,16 +15,6 @@ class Header extends React.Component {
                         <li> Contact Me</li>
                     </ul>
                 </nav>
-
-                <Link to={'/'} >
-                    Home
-                </Link>
-                <Link to={'/aboutme'} >
-                    About
-                </Link>
-                <Link to={'/Projects'} >
-                    Projects
-                </Link>
             </div>
         )
     }

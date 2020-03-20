@@ -5,7 +5,15 @@ class Footer extends React.Component {
     render() {
         return (
             <div>
-                <Link to={'/contact'} >Contact Me</Link>
+                <nav>
+                    <ul>
+                        <li className="first"><Link to={'/contact'} >Contact Me</Link></li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                        <li>LinkedIn</li>
+                    </ul>
+                </nav>
+                
                 
             </div>
         )

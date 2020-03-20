@@ -8,6 +8,8 @@ import Contact from './Contact.js'
 import Projects from './Projects.js'
 import Header from './Header.js'
 import Interests from './Interests.js'
+import Footer from './Footer.js'
+import Work from './Work.js'
 
 import * as serviceWorker from './serviceWorker';
 
@@ -21,7 +23,9 @@ function Router(props) {
                 <Route path={'/Projects'} component={Projects} />
                 <Route path={'/Contact'} component={Contact} />
                 <Route path={'/Interests'} component={Interests} />
+                <Route path={'/Work'} component={Work} />
             </Switch>
+            <Footer />
         </BrowserRouter>
     )
 }
