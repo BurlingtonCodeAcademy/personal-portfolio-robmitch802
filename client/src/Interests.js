@@ -12,6 +12,7 @@ class Hobbies extends React.Component {
                 <div>Biking</div>
                 <div>Cooking</div>
                 <div>Figure things out</div>
+                <div><Link to={'/'} >Home</Link></div>
             </div>
         )
     }
