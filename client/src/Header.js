@@ -2,6 +2,13 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 class Header extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state={
+
+        }
+    }
+
     render() {
         return (
             <div>
@@ -11,8 +18,8 @@ class Header extends React.Component {
                             <li><Link to={'/aboutme'}>About Me</Link></li>
                         <li><Link to={'/projects'} >Projects</Link></li>
                         <li><Link to={'/Interests'} >Interests</Link></li>
-                        <li>Work</li>
-                        <li> Contact Me</li>
+                        <li><Link to={'/Work'} >Work</Link></li>
+                        <li><Link to={'/Contact'} >Contact Me</Link></li>
                     </ul>
                 </nav>
             </div>

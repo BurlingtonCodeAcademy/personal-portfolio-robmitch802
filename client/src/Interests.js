@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 class Hobbies extends React.Component {
     render() {
         return (
-            <div>
+            <div className="container">
                 <h1>Things I like to Do</h1>
                 <div>Skiing</div>
                 <div>Running</div>
