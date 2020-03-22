@@ -1,6 +1,6 @@
 * {
     margin: 0 auto;
-    background-color: deepskyblue;
+    background-color: white;
 }
 body{
     margin: 0 auto;
@@ -13,10 +13,10 @@ body{
  align-items: center;
  max-width: 99%;
  min-height: 75vh;
- background-color: deepskyblue;   
+ background-color: white;   
  font-size: 2rem;
  font-weight: bolder;
- color: white;
+ color: black;
  font-family: 'Kanit', sans-serif;
  font-weight: normal;
 
@@ -33,10 +33,6 @@ body{
             transform: rotate(7deg);
 }
 
-.homeLink:hover{
-    text-shadow: 5px, 5px, #000000;
-}
-
 /****Navigation Bar styles *************/
 nav {
     display: flex;
@@ -44,7 +40,7 @@ nav {
     justify-content: center;
     position: relative;
     font-size: 1.3rem;
-    background-color: deepskyblue;   
+    background-color: #fff;   
     font-family: 'Kanit', sans-serif;
     font-weight: bold;
 }
@@ -72,6 +68,13 @@ nav ul li:before {
     display:flex;
     flex-direction: column;
 }
+#headerNav {
+
+}
+#headerNav a:hover{
+    color: red;
+    text-shadow: 5px;
+}
 .firstRow{
     display: flex;
     flex-direction: row;
@@ -98,7 +101,10 @@ nav ul li:before {
 }
 .listContainer a{
     text-decoration: none;
-    color: white;
+    color: black;
+}
+.listContainer li:hover{
+    text-shadow: 55px, 55px, #000000;
 }
 
 img {

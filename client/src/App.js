@@ -13,13 +13,6 @@ class App extends React.Component {
 
   }
 
-locationHandler = () => {
-  let currentSpot = this.state.currentLoc;
-  this.setState = {
-    currentLoc: currentSpot,
-  }
-  console.log('URL: ', window.location.href)
-}
 
 
 render (){
