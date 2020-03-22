@@ -7,12 +7,6 @@ class App extends React.Component {
     super(props) 
 
     this.state={
-      homeSelected: true,
-      aboutSelected: false,
-      projectsSelected: false,
-      interestsSelected: false,
-      workSelected: false,
-      contactSelected: false,
       currentLoc: ''
       
     }
@@ -34,11 +28,11 @@ render (){
     <div className="container">
       <h1>Rob Mitchell</h1>
       <div className="listContainer">
-      <div><Link to={'/AboutMe'} onClick={this.locationHandler} ><span>About Me</span></Link></div>
-      <div><Link to={'/Projects'} >Projects</Link></div>
-      <div><Link to={'/Interests'} >Hobbies &amp; Interests</Link></div>
-      <div><Link to={'/Work'} >Work</Link></div>
-      <div><Link to={'/Contact'} ><span>Contact Me</span></Link></div>
+      <div className="homeLink"><Link to={'/AboutMe'} onClick={this.locationHandler} ><img className="appImage" src="/rob04.jpg" /><span>About Me</span></Link></div>
+      <div className="homeLink"><Link to={'/Projects'} >Projects</Link></div>
+      <div className="homeLink"><Link to={'/Interests'} >Hobbies &amp; Interests</Link></div>
+      <div className="homeLink"><Link to={'/Work'} >Work</Link></div>
+      <div className="homeLink"><Link to={'/Contact'} ><span>Contact Me</span></Link></div>
       </div>
     </div>
     </div>

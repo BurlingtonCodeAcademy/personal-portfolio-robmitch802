@@ -14,9 +14,10 @@ import Work from './Work.js'
 import * as serviceWorker from './serviceWorker';
 
 function Router(props) {
+
     return(
         <BrowserRouter>
-            <Header />
+            <Header selected={props.selected}/>
             <Switch>
                 <Route exact path={'/'} component={App} />
                 <Route path={'/AboutMe'} component={AboutMe} />
