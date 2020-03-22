@@ -33,6 +33,15 @@ body{
             transform: rotate(7deg);
 }
 
+ul{
+    list-style-type: none;
+}
+.projects a{
+    text-decoration: none;
+    color: black;
+}
+
+
 /****Navigation Bar styles *************/
 nav {
     display: flex;
