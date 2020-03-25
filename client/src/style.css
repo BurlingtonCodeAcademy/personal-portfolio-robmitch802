@@ -1,3 +1,6 @@
+/**font-family: 'Montserrat', sans-serif;
+font-family: 'Markazi Text', serif; **/
+
 * {
     margin: 0 auto;
     background-color: white;
@@ -17,13 +20,37 @@ body{
  font-size: 2rem;
  font-weight: bolder;
  color: black;
- font-family: 'Kanit', sans-serif;
+ font-family: 'Montserrat', sans-serif;
  font-weight: normal;
 
 }
+.container h1 h2 h3 h4 h5 h6{
+    font-family: 'Markazi Text', serif;
+}
+/************app page styles ******/
+.topContainer{
+    display: flex;
+    max-width: 80vw;
+}
+.middleContainer {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.articleContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.appImageContainer {
+    display: flex;
+    flex-direction: column;
+}
 
 .appImage {
-    border-radius: 50%;
+    border-radius: 2%;
     max-width: 100px;
     -webkit-transition: -webkit-transform .2s ease-in-out;
             transition:         transform .2s ease-in-out;
@@ -31,6 +58,9 @@ body{
 .appImage:hover{
     -webkit-transform: rotate(7deg);
             transform: rotate(7deg);
+}
+.hedLink:hover {
+    text-decoration: underline;
 }
 
 ul{
@@ -40,7 +70,9 @@ ul{
     text-decoration: none;
     color: black;
 }
-
+.refer {
+    font-size: .7rem;
+}
 
 /****Navigation Bar styles *************/
 nav {
