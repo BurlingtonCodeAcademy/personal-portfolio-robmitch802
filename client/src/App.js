@@ -8,76 +8,69 @@ class App extends React.Component {
 
     this.state = {
       currentLoc: ''
-
     }
 
   }
-
-
 
   render() {
     return (
       <div>
         <div className="container">
-          <h1>rob mitchell</h1>
+          <div className="headerTop"><h1>rob mitchell</h1></div>
           <div className="topContainer">
-            <div className="homeLink">
-
-              <Link to={'/AboutMe'} onClick={this.locationHandler} ><span className="hedLink">About Me</span></Link>
+                <div className="words" >
+                  <p>
+                    I'm an experienced communications professional who left a career in journalism to learn coding, now on the path to becoming a full stack software developer.
+                  </p>
+                  <p className="center"><Link to={'/AboutMe'} onClick={this.locationHandler} ><span className="hedLink">More About Me</span></Link></p>
+                </div>
+              
+          </div>
+          <div class="middleContainer">
               <div className="articleContainer">
+                
                 <div className="appImageContainer">
-                  <img className="appImage" src="/img/rob04.jpg" />
-                  <div className="caption" >caption</div>
+                  <Link to={'/Projects'} >
+                  <img className="appImage" src="/img/geo-vermonter.jpg" />
+                  </Link>
+                  <div className="caption" ></div>
                 </div>
 
                 <div className="words" >
-                  <p>I'm a native Vermonter who left a career in journalism to start learning to code.
-                </p>
-                  <p></p>
+                <p><Link to={'/Projects'} >Projects</Link></p>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="middleContainer">
-            <div className="homeLink">
-              <div className="articleContainer">
-                <div><Link to={'/Projects'} >Projects</Link></div>
-                <div className="appImageContainer">
-                  <img className="appImage" src="/img/geo-vermonter.jpg" />
-                  <div className="caption" >caption</div>
-                </div>
-
-                <div className="words" ><p>
-                </p></div>
-              </div>
-
-            </div>
-            <div className="homeLink">
+            
             <div className="articleContainer">
-              <div><Link to={'/Interests'} >Hobbies &amp; Interests</Link></div>
                 <div className="appImageContainer">
+                  <Link to={'/Interests'} >
                   <img className="appImage" src="/img/ontario_ducks.jpg" />
-                  <div className="caption" >caption</div>
+                  </Link>
+                  <div className="caption" ></div>
                 </div>
 
-                <div className="words" ><p>
-                </p></div>
+                <div className="words" >
+                  <p>
+                  <Link to={'/Interests'} >Play</Link>
+                  </p>
+                </div>
               </div>
-            </div>
-            <div className="homeLink">
+            
+            
             <div className="articleContainer">
-              <div><Link to={'/Work'} >Work</Link></div>
                 <div className="appImageContainer">
-                  <img className="appImage" src="/rob04.jpg" />
-                  <div className="caption" >caption</div>
+                  <Link to={'/Work'} >
+                  <img className="appImage" src="img/rob04.jpg" />
+                  </Link>
+                  <div className="caption" ></div>
                 </div>
-
-                <div className="words" ><p>
-                </p></div>
+                <div className="words" >
+                  <p>
+                   <Link to={'/Work'} >Work</Link>
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="homeLink"><Link to={'/Contact'} ><span>Contact Me</span></Link></div>
           </div> {/* end container class */}
       </div>
     );
