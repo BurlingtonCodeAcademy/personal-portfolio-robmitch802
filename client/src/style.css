@@ -44,8 +44,9 @@ body{
 .middleContainer {
     display: flex;
     flex-direction: row;
-    
+    margin: 0 auto;
 }
+
 
 .articleContainer {
     display: flex;
@@ -61,6 +62,16 @@ body{
     margin: 1rem;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
+@media only screen and ( max-width: 600px ) {
+    .middleContainer { 
+        flex-direction: column-reverse; 
+     }
+     .articleContainer {
+         width: 90%;
+     }
+ }
+
 p a{
     text-decoration: none;
     color: black;
@@ -69,10 +80,12 @@ p a{
     display: flex;
     justify-content: center;
     color: blue;
+    margin: 2rem 0 0 0;
 }
 .appImageContainer {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-bottom: 1rem;
 }
 
@@ -141,10 +154,20 @@ nav ul li:before {
     color: red;
     text-shadow: 5px;
 }
+@media only screen and (max-width: 600px) {
+    #headerNav {
+        display: none;
+    }
+}
+
+
 /********footer styles ****/
 .footerNav {
     display:flex;
     flex-direction: column;
+    width: 95%;
+    margin-bottom: 10px;;
+    font-size: .9rem;
 }
 .firstRow {
     display: flex;
@@ -160,6 +183,30 @@ nav ul li:before {
 }
 .secondRow li a:hover{
     color: pink;
+}
+
+@media only screen and (max-width: 600px) {
+    .footerNav {
+        flex-direction: column-reverse;
+    }
+    .firstRow {
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .secondRow {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .firstRow li {
+        margin-bottom: 1rem;
+    }
+    .secondRow li {
+        margin-bottom: 1rem;
+    }
+    .secondRow ul {
+        display: flex;
+        justify-content: center;
+    }
 }
 
 /***** general list styles ****/

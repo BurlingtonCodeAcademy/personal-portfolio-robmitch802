@@ -20,9 +20,9 @@ class App extends React.Component {
           <div className="topContainer">
                 <div className="words" >
                   <p>
-                    I'm an experienced communications professional who left a career in journalism to learn coding, now on the path to becoming a full stack software developer.
+                    I find ways to get things done, with a smile. Write, run, code.
                   </p>
-                  <p className="center"><Link to={'/AboutMe'} onClick={this.locationHandler} ><span className="hedLink">More About Me</span></Link></p>
+                  <p className="center"><Link to={'/AboutMe'} onClick={this.locationHandler} ><strong>More About Me</strong></Link></p>
                 </div>
               
           </div>
@@ -30,43 +30,45 @@ class App extends React.Component {
               <div className="articleContainer">
                 
                 <div className="appImageContainer">
-                  <Link to={'/Projects'} >
+                  {/* <Link to={'/Projects'} >
                   <img className="appImage" src="/img/geo-vermonter.jpg" />
                   </Link>
-                  <div className="caption" ></div>
+                  <div className="caption" ></div> */}
+                  <p>Code is magic made real.</p>
                 </div>
 
                 <div className="words" >
-                <p><Link to={'/Projects'} >Projects</Link></p>
+                <p><strong><Link to={'/Projects'} >Projects</Link></strong></p>
                 </div>
               </div>
             
             <div className="articleContainer">
                 <div className="appImageContainer">
-                  <Link to={'/Interests'} >
+                  {/* <Link to={'/Interests'} >
                   <img className="appImage" src="/img/ontario_ducks.jpg" />
                   </Link>
-                  <div className="caption" ></div>
+                  <div className="caption" ></div> */}
+                  <p>What I do when I'm not doing this.</p>
                 </div>
 
                 <div className="words" >
                   <p>
-                  <Link to={'/Interests'} >Play</Link>
+                  <strong><Link to={'/Interests'} >Play</Link></strong>
                   </p>
                 </div>
               </div>
             
-            
             <div className="articleContainer">
                 <div className="appImageContainer">
-                  <Link to={'/Work'} >
+                  {/* <Link to={'/Work'} >
                   <img className="appImage" src="img/rob04.jpg" />
                   </Link>
-                  <div className="caption" ></div>
+                  <div className="caption" ></div> */}
+                  <p>History, one job at a time.</p>
                 </div>
                 <div className="words" >
                   <p>
-                   <Link to={'/Work'} >Work</Link>
+                   <strong><Link to={'/Work'} >Work</Link></strong>
                   </p>
                 </div>
               </div>
@@ -74,7 +76,7 @@ class App extends React.Component {
           </div> {/* end container class */}
       </div>
     );
-  }
+    }
 }
 
 export default App;
