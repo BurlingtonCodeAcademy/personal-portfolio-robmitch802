@@ -1,79 +1,62 @@
 import React from 'react';
-import { Link } from 'react-router-dom'
-import './style.css';
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import 'react-bootstrap'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import '../src/style.css';
+import NavBar from './components/Navbar.js'
+import AboutMe from './components/AboutMe.js'
+import Header from './components/Header.js'
+import Work from './components/Work.js'
+import Projects from './components/Projects.js'
+import Interests from './components/Interests.js'
+import Contact from './components/Contact'
+import Footer from './components/Footer.js'
+import Home from './components/Home.js'
 
 class App extends React.Component {
   constructor(props) {
     super(props)
 
     this.state = {
-      currentLoc: ''
+      currentLoc: 'home'
     }
+  }
 
+  workHandler = () =>{
+    this.setState({
+      currentLoc: 'work'
+    })
+    console.log(this.state.currentLoc)
   }
 
   render() {
     return (
       <div>
-        <div className="container">
-          <div className="headerTop"><h1>rob mitchell</h1></div>
-          <div className="topContainer">
-                <div className="words" >
-                  <p>
-                    I find ways to get things done, with a smile. Write, run, code.
-                  </p>
-                  <p className="center"><Link to={'/AboutMe'} onClick={this.locationHandler} ><strong>More About Me</strong></Link></p>
-                </div>
-              
-          </div>
-          <div class="middleContainer">
-              <div className="articleContainer">
-                
-                <div className="appImageContainer">
-                  {/* <Link to={'/Projects'} >
-                  <img className="appImage" src="/img/geo-vermonter.jpg" />
-                  </Link>
-                  <div className="caption" ></div> */}
-                  <p>Code is magic made real.</p>
-                </div>
+        <Router>
+          <NavBar />
+          <Header />
+          <Route path="/" exact >
+            <Home />
+          </Route>
+          <Route path="/aboutme" >
+          <AboutMe /> 
+          </Route>
+            <Route path="/work" onClick={this.workHandler} >
+              <Work />
+            </Route>
+            <Route path="/projects" >
+              <Projects />
+            </Route>
+            <Route path="/interests" >
+              <Interests />
+            </Route>
+            <Route path="/contact" >
+              <Contact />
+            </Route>
 
-                <div className="words" >
-                <p><strong><Link to={'/Projects'} >Projects</Link></strong></p>
-                </div>
-              </div>
-            
-            <div className="articleContainer">
-                <div className="appImageContainer">
-                  {/* <Link to={'/Interests'} >
-                  <img className="appImage" src="/img/ontario_ducks.jpg" />
-                  </Link>
-                  <div className="caption" ></div> */}
-                  <p>What I do when I'm not doing this.</p>
-                </div>
+            <Footer />
+        </Router>
 
-                <div className="words" >
-                  <p>
-                  <strong><Link to={'/Interests'} >Play</Link></strong>
-                  </p>
-                </div>
-              </div>
-            
-            <div className="articleContainer">
-                <div className="appImageContainer">
-                  {/* <Link to={'/Work'} >
-                  <img className="appImage" src="img/rob04.jpg" />
-                  </Link>
-                  <div className="caption" ></div> */}
-                  <p>History, one job at a time.</p>
-                </div>
-                <div className="words" >
-                  <p>
-                   <strong><Link to={'/Work'} >Work</Link></strong>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div> {/* end container class */}
       </div>
     );
     }

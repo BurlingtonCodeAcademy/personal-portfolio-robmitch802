@@ -4,18 +4,48 @@ font-family: 'Markazi Text', serif; **/
 * {
     margin: 0 auto;
     background-color: white;
+
 }
 body{
     margin: 0 auto;
     min-width: 99vw;
+    padding-top: 40px;
 }
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: blue;
+    text-decoration: none;
+}
+.brandImage {
+    max-width: 32px;
+}
+.navLink {
+    font-size: 1.9rem;
+}
+.navLink:hover {
+    background-color: #F8F9FA;
+    font-size: 2rem;
+}
+.padLess {
+    padding: 7px 16px;
+}
+.headerContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+}
+
 .container {
  display: flex;
  flex-direction: column;
  justify-content: flex-start;
+ margin-top: 40px;
  align-items: center;
  max-width: 99%;
- min-height: 75vh;
  background-color: white;   
  font-size: 1.5rem;
  font-weight: bolder;
@@ -76,6 +106,7 @@ p a{
     text-decoration: none;
     color: black;
 }
+
 .center{
     display: flex;
     justify-content: center;
@@ -114,7 +145,7 @@ ul{
 }
 
 /****Navigation Bar styles *************/
-nav {
+/* nav {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -137,13 +168,10 @@ nav ul li{
 nav ul li .first{
     margin-left: 0;
 }
-nav ul li a{
-    color: black;
-    text-decoration: none;
-}
+
 nav ul li:before {
     margin-left: 0;
-}
+} */
  
 /*****header styles ***/
 .headerTop {
@@ -162,7 +190,7 @@ nav ul li:before {
 
 
 /********footer styles ****/
-.footerNav {
+/* .footerNav {
     display:flex;
     flex-direction: column;
     width: 95%;
@@ -207,7 +235,7 @@ nav ul li:before {
         display: flex;
         justify-content: center;
     }
-}
+} */
 
 /***** general list styles ****/
 .listContainer{
@@ -230,7 +258,9 @@ img {
     width: 20vw;    
 }
 
-#aboutContainer{
+.aboutContainer{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
